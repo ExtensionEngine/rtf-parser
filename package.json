@@ -1,0 +1,56 @@
+{
+  "name": "@extensionengine/rtf-parser",
+  "version": "0.0.0",
+  "description": "Parse RTF documents",
+  "keywords": [
+    "rtf"
+  ],
+  "homepage": "https://github.com/ExtensionEngine/rtf-parser#readme",
+  "bugs": {
+    "url": "https://github.com/ExtensionEngine/rtf-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ExtensionEngine/rtf-parser.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Extension Engine",
+    "email": "info@extensionengine.com",
+    "url": "https://extensionengine.com"
+  },
+  "main": "index.js",
+  "bin": {
+    "rtf2txt": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "docs": "documentation readme ./index.js --section=API",
+    "lint": "eslint .",
+    "release": "npx np"
+  },
+  "dependencies": {
+    "pumpify": "^2.0.1",
+    "rtf-parser": "^1.3.3"
+  },
+  "devDependencies": {
+    "@extensionengine/eslint-config": "^1.3.0",
+    "babel-eslint": "^10.1.0",
+    "documentation": "^13.0.2",
+    "eslint": "^7.7.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-require-sort": "^1.2.2",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^6.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
